@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,11 @@ class ExamplePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ElevatedButton(onPressed: () {}, child: const Text('Play')),
+        child: ElevatedButton(onPressed: () {
+          AudioPlayer audioPlayer = AudioPlayer();
+
+          audioPlayer.play(AssetSource('Ancestral.mp3'));
+        }, child: const Text('Play')),
       ),
     );
   }

@@ -1,16 +1,19 @@
 # audioplayers_package_linux_issue
 
-A new Flutter project.
+This repository is a minimal reproducible example of the issue with the `audioplayers` package on Linux when it is bundled via an appimage distribution.
 
-## Getting Started
+You will need to have the fastforge CLI to be able to build the example.
+https://fastforge.dev/
 
-This project is a starting point for a Flutter application.
+The command to build the binary is
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+fastforge package --platform linux --targets appimage
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To run the binary, just execute the generated AppImage file:
+
+```bash
+./dist/1.0.0+1/audioplayers_package_linux_issue-1.0.0+1-linux.AppImage
+```
