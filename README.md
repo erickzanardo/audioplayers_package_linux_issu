@@ -2,15 +2,17 @@
 
 This repository is a minimal reproducible example of the issue with the `audioplayers` package on Linux when it is bundled via an appimage distribution.
 
-You will need to have the fastforge CLI to be able to build the example.
-https://fastforge.dev/
-
-The command to build the binary is
+To fetch dependencies, run the bootstrap script:
 
 ```bash
-fastforge package --platform linux --targets appimage
+./bootstrap.sh
 ```
 
+Then, run the fastforge wrapper script:
+
+```bash
+./fastforge.sh
+```
 
 To run the binary, just execute the generated AppImage file:
 
