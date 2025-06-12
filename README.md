@@ -11,7 +11,6 @@ The command to build the binary is
 fastforge package --platform linux --targets appimage
 ```
 
-
 To run the binary, just execute the generated AppImage file:
 
 ```bash
@@ -23,11 +22,6 @@ sudo pacman -S gst-plugins-good
 
 curl -LO https://raw.githubusercontent.com/linuxdeploy/linuxdeploy-plugin-gstreamer/refs/heads/master/linuxdeploy-plugin-gstreamer.sh
 sudo chmod +x ./linuxdeploy-plugin-gstreamer.sh
-
-# This will launch the release build of the flutter app and strace it
-# Click on the button in the app when it starts, and then close it.
-# You should now have an ./strace.log file
-./trace.sh
 
 curl -L https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage -o appimagetool
 

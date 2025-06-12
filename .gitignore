@@ -1,6 +1,4 @@
-# 3P
-appimagetool
-linuxdeploy-plugin-gstreamer.sh
+ignore/
 
 # this is just a temp checksum
 dart.md5
