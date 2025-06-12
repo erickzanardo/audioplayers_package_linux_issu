@@ -1,3 +1,10 @@
+# 3P
+appimagetool
+linuxdeploy-plugin-gstreamer.sh
+
+# this is just a temp checksum
+dart.md5
+
 # Miscellaneous
 *.class
 *.log
